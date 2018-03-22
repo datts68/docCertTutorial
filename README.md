@@ -89,6 +89,7 @@ Now we can serve our web application on http://localhost:8080
 # Test
 We will use the [MetaMask](https://metamask.io/) browser plugin, which is available for Chrome and Firefox. MetaMask is an Ethereum wallet for the browser. The extension actually injects a web3 provider into the browser, which allows us to connect to the blockchain via a MetaMask provided node. We can use web3 as usual and MetaMask will automatically pop up and ask users to confirm transactions and, importantly, spend their own Ether.
 
+----
 After install MetaMask, connect to your private blockchain network (Custome RPC).
 
 <img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-00.png">
