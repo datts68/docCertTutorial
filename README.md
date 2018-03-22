@@ -92,8 +92,20 @@ We will use the [MetaMask](https://metamask.io/) browser plugin, which is availa
 After install MetaMask, connect to your private blockchain network (Custome RPC).
 
 <img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-01.png">
+
+If we use the upload dialogue and click on the “Fingerprint to Blockchain” button, MetaMask we pop up and request transaction confirmation:
+
 <img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-02.png">
+
+If we confirm the transaction, MetaMask sends it via its Ethereum node, signed with the end-users key. We are presented with a result similar to this:
+
 <img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-03.png">
+
+We now have to wait for a short time for the transaction to be mined. Once the transaction is mined verifying the file by clicking “Find on Blockchain” returns output similar to the following:
+
 <img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-04.png">
+
+Verify the file not found on Ethereum blockchain:
+
 <img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-05.png">
 
