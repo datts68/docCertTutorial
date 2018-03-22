@@ -89,6 +89,8 @@ Make sure you have a local web server installed, to serve our web application. I
 Now we can serve our web application on http://localhost:8080
 
 # Test
+Each time a user uploads a document hash, a transaction fee occurs, which is charged to your account.
+
 We will use the [MetaMask](https://metamask.io/) browser plugin, which is available for Chrome and Firefox. MetaMask is an Ethereum wallet for the browser. The extension actually injects a web3 provider into the browser, which allows us to connect to the blockchain via a MetaMask provided node. We can use web3 as usual and MetaMask will automatically pop up and ask users to confirm transactions and, importantly, spend their own Ether.
 
 After install MetaMask, connect to your private blockchain network (custome RPC).
