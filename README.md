@@ -77,7 +77,7 @@ You should see the address each contract is assigned: `Notary: 0xf3762f6e21bf1d0
 
 We now have version of our contract on your private blockchain simulator and can interact with it. There are various ways to test a contract, but for now we connect to your blockchain using a web interface.
 
-### Developing web interfaces for smart contracts
+### Developing web interface for smart contracts
 Edit file `ether-doc-cert/webapp/notaryWebLib.js`: `var address` is contract address.
 
 Make sure you have a local web server installed, to serve our web application. If you do not have a local web server application you may use http-server. This can be installed globally with:
