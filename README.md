@@ -6,7 +6,7 @@ In this tutorial we will look at how to create an Ethereum contract that allows 
 # Contributing
 This tutorial is forked from the medium of Stefan Beyer: [Ethereum Development Guide](https://medium.com/@sbeyer_31150/ethereum-development-guide-part-1-ad0c77c3683f)
 
-However, in this tutorial, i will deploy an Ethereum Document Certification Contract on your Private Ethereum Blockchain.
+However, in this tutorial, we will deploy an Ethereum Document Certification Contract on your Private Ethereum Blockchain.
 
 # Deploy
 ### Developing the smart contract
@@ -20,9 +20,7 @@ In the `ether-doc-cert` directory, compile this code with truffle type:
 
     truffle compile
 
-Before we can execute this code and proceed with the actual deployment, we have to configure Truffle to use our local test blockchain for deployment.
-
-To do so we need to edit the file truffle.js which is the main configuration file, and add the following content:
+Before we can execute this code and proceed with the actual deployment, we have to configure Truffle. To do so we need to edit the file truffle.js which is the main configuration file, and add the following content:
 
     module.exports = {
     networks: {
@@ -43,7 +41,7 @@ To do so we need to edit the file truffle.js which is the main configuration fil
 
 **development**: This code tells truffle to look for an Ethereum node’s RPC interface on port 7545 on localhost and deploy onto the network we find there, whatever the network id. You can use [Ganache](http://truffleframework.com/ganache/).
 
-**live**: This code tells truffle to look for an your Private Ethereum node’s RPC interface on port 8545 (RPC port) on host `<ip_host>`. `<your_address>` is a placeholder which you should replace with the address you want to use to deploy your Smart Contracts
+**live**: This code tells truffle to look for an your Private Ethereum node’s RPC interface on port 8545 (RPC port) on host `<ip_host>`. `<your_address>`: a placeholder which you should replace with the address you want to use to deploy your Smart Contracts. `gas`: maximum amount of gas we are happy to spend for contract deployment. The other relevant parameter, the gas price, could also be specified, but we will use the default value.
 
 Then in geth console, unlock the account:
 
@@ -75,10 +73,14 @@ Saving successful migration to network...
   ... 0x61a29767692a5c693f72c2d624e0fb6df14b2798c70dae18b92e6da514828c6d
 Saving artifacts...
 
-Next, edit file `ether-doc-cert/webapp/notaryWebLib.js`: `var address` is contract address in above results: `Notary: 0xf3762f6e21bf1d040d85e7daee89dfa74c92c6b4`
+You should see the address each contract is assigned: `Notary: 0xf3762f6e21bf1d040d85e7daee89dfa74c92c6b4`
+
+We now have version of our contract on your private blockchain simulator and can interact with it. There are various ways to test a contract and Truffle actually ships with a sophisticated test framework, but for now we connect to your blockchain using a web interface.
 
 ### Developing web interfaces for smart contracts
-If you do not have a local web server application you may use http-server. This can be installed globally with:
+Edit file `ether-doc-cert/webapp/notaryWebLib.js`: `var address` is contract address.
+
+Make sure you have a local web server installed, to serve our web application. If you do not have a local web server application you may use http-server. This can be installed globally with:
 
     npm install http-server -g
     cd ether-doc-cert/webapp/
