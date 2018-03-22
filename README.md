@@ -75,7 +75,7 @@ Saving artifacts...
 
 You should see the address each contract is assigned: `Notary: 0xf3762f6e21bf1d040d85e7daee89dfa74c92c6b4`
 
-We now have version of our contract on your private blockchain simulator and can interact with it. There are various ways to test a contract and Truffle actually ships with a sophisticated test framework, but for now we connect to your blockchain using a web interface.
+We now have version of our contract on your private blockchain simulator and can interact with it. There are various ways to test a contract, but for now we connect to your blockchain using a web interface.
 
 ### Developing web interfaces for smart contracts
 Edit file `ether-doc-cert/webapp/notaryWebLib.js`: `var address` is contract address.
