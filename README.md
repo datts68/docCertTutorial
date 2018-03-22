@@ -91,7 +91,7 @@ We will use the [MetaMask](https://metamask.io/) browser plugin, which is availa
 
 After install MetaMask, connect to your private blockchain network (Custome RPC).
 
-<img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-01.png">
+<img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-00.png">
 
 If we use the upload dialogue and click on the “Fingerprint to Blockchain” button, MetaMask we pop up and request transaction confirmation:
 
