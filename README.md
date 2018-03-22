@@ -16,7 +16,7 @@ Install Truffle with the following command (the -g option may require root privi
 
     npm install -g truffle
 
-In the ether-doc-cert directory, compile this code with truffle type:
+In the `ether-doc-cert` directory, compile this code with truffle type:
 
     truffle compile
 
@@ -75,7 +75,7 @@ Saving successful migration to network...
   ... 0x61a29767692a5c693f72c2d624e0fb6df14b2798c70dae18b92e6da514828c6d
 Saving artifacts...
 
-Next, edit file `ether-doc-cert/webapp/notaryWebLib.js`. `var address` is contract address in above results: `Notary: 0xf3762f6e21bf1d040d85e7daee89dfa74c92c6b4`
+Next, edit file `ether-doc-cert/webapp/notaryWebLib.js`: `var address` is contract address in above results: `Notary: 0xf3762f6e21bf1d040d85e7daee89dfa74c92c6b4`
 
 ### Developing web interfaces for smart contracts
 If you do not have a local web server application you may use http-server. This can be installed globally with:
