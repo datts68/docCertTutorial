@@ -85,8 +85,6 @@ Make sure you have a local web server installed, to serve our web application. I
     npm install http-server -g
     cd ether-doc-cert/webapp/
     http-server .
-    
-Now we can serve our web application on http://localhost:8080
 
 # Test
 Each time a user uploads a document hash, a transaction fee occurs, which is charged to your account.
@@ -96,7 +94,7 @@ We will use the [MetaMask](https://metamask.io/) browser plugin, which is availa
 After install MetaMask, connect to your private blockchain network (custome RPC). Make sure your balance have got a little Ether.
 
 ----
-Now, go to web application: http://localhost:8080
+Now we can serve our web application on http://localhost:8080
 
 <img src="https://github.com/datts68/ether-doc-cert/blob/master/images/ether-doc-cert-00.png">
 
